@@ -58,7 +58,14 @@ Roll numbers of students who have at least one subscription:
 1,2,3,4,5,6,7,8,9,10,11,21 and 55. Roll numbers are 1,2,3,6 and 8 are in both sets so they are only counted once.
 Hence, the total is 13 students.
 
-Solution:
+Solution 1:
 _, a = input(), set(input().split())
 _, b = input(), set(input().split())
 print(len(a.union(b)))
+
+Solution 2:
+n = input()
+set_n = set(map(int, input().split()))
+b = input()
+set_b = set(map(int, input().split()))
+print(len(set_n.union(set_b)))
