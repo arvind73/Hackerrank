@@ -1,2 +1,2 @@
 # Hackerrank
-This is all my code for hackerrank challenges and practice exercise problems. Hope you like it.
+This is all my code for hackerrank practice exercise problems. Hope it helps!
