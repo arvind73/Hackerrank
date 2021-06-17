@@ -22,7 +22,7 @@ Sample Output 0
 
 hACKERrANK.COM PRESENTS "pYTHONIST 2".
   
- Solution:
+Solution 1:
   def swap_case(s):
     result = ""
     for letter in s:
@@ -32,7 +32,9 @@ hACKERrANK.COM PRESENTS "pYTHONIST 2".
             result += letter.upper()
     return result
 
-if __name__ == '__main__':
-    s = raw_input()
-    result = swap_case(s)
-    print result
+
+Solution 2:
+def swapCase(s):
+  return s.swapcase()
+
+print('Swap my CASE') --> sWAP MY CASE
