@@ -1,0 +1,26 @@
+Sample Input 0
+
+ABCDEFGHIJKLIMNOQRSTUVWXYZ
+4
+Sample Output 0
+
+ABCD
+EFGH
+IJKL
+IMNO
+QRST
+UVWX
+YZ
+
+
+import textwrap
+Solution 1:
+def wrap(string, max_width):
+    return "\n".join([string[i:i+max_width] for i in range(0, len(string), max_width)])
+
+Solution 2:
+def wrap(string, max_width):
+    l= list()
+    for i in range(0,len(string),max_width):
+        l.append(string[i:i+max_width])
+    return "\n".join(l)
