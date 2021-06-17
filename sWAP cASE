@@ -32,6 +32,7 @@ Solution 1:
             result += letter.upper()
     return result
 
+join method helps in converting list back into string
 
 Solution 2:
 def swapCase(s):
