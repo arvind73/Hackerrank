@@ -23,7 +23,7 @@ this-is-a-string
 
 Solution:
 def split_and_join(line):
-    return("-".join(line.split()))
+    return("-".join(line.split(' ')))
     
 USING REPLACE METHOD:
 def split_and_join(line):
