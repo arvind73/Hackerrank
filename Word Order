@@ -1,0 +1,19 @@
+In the given problem, an input of how many words that are taken as input is given. Next that many number of words are given.
+
+Our task is to calculate total amount of unique words and next, we need to calculate the total occurances of each word.
+
+Here since we need the find unique words, dictionaries are used. On looping through each word, we check if the word exists, if it does, we increment
+by one. If it doesn't, we just assign 1 as value.
+In the the end, print out the length of dictionary for finding out the total unique words.
+
+n = int(input())
+dict = {}
+for i in range(n):
+    word = input()
+    if word not in dict:
+        dict[word] = 1  # to find total occurances
+    else:
+        dict[word] += 1
+print(len(dict))
+for i in dict:
+    print(dict[i], end=" ")
